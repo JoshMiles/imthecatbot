@@ -8,11 +8,24 @@ namespace imthecatbot
 {
     class Program
     {
-
+        static catCommands commands;
         static async Task Main(string[] args)
         {
 
             Console.WriteLine("Starting up.");
+
+            Console.WriteLine("Loading command modules");
+
+            try
+            {
+                commands = new catCommands();
+                Console.WriteLine(commands.listCommands());
+            }
+            catch
+            {
+                Console.WriteLine("There was an issue loading the command modules.");
+            }
+
 
             catBot meow = new catBot(catSecrets.botUsername, catSecrets.botPassword, catSecrets.ip, catSecrets.port, catSecrets.twitchChannel);
 
@@ -28,14 +41,17 @@ namespace imthecatbot
             {
                 Console.WriteLine($"{twitchChatMessage.Sender} said {twitchChatMessage.Message}");
 
-                if (twitchChatMessage.Message.StartsWith("!meow"))
+                foreach(commandClass cc in commands.commands)
                 {
-                    await meow.sendMessage($"MEOW MEOW @{twitchChatMessage.Sender}! MEOWWWW");
-
+                    if (twitchChatMessage.Message.StartsWith($"!{cc.command}"))
+                    {
+                        string response = cc.response;
+                        response = response.Replace("{Sender}", twitchChatMessage.Sender);
+                        await meow.sendMessage(response);
+                    }
                 }
-
             };
-
+            
             await Task.Delay(-1);
 
         }
