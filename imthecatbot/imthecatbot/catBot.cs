@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
+using System.Net.Security;
 using System.Net.Sockets;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
 namespace imthecatbot
@@ -46,8 +48,13 @@ namespace imthecatbot
             var tcpClient = new TcpClient();
             await tcpClient.ConnectAsync(ip, port);
 
-            sr = new StreamReader(tcpClient.GetStream());
-            sw = new StreamWriter(tcpClient.GetStream())
+            SslStream sslStream = new SslStream(tcpClient.GetStream(), false, ValidateServerCertificate, null);
+
+            await sslStream.AuthenticateAsClientAsync(ip);
+
+
+            sr = new StreamReader(sslStream);
+            sw = new StreamWriter(sslStream)
             {
                 NewLine = "\t\n",
                 AutoFlush = true
@@ -99,5 +106,9 @@ namespace imthecatbot
             await sw.WriteLineAsync($"PRIVMSG #{twitchChannel} :{messageText}");
         }
 
+        private bool ValidateServerCertificate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+        {
+            return sslPolicyErrors == SslPolicyErrors.None;
+        }
     }
 }
