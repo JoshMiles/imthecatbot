@@ -1,0 +1,17 @@
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/bin/Debug/net5.0/imthecatbot.deps.json
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/bin/Debug/net5.0/imthecatbot.runtimeconfig.json
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/bin/Debug/net5.0/imthecatbot.runtimeconfig.dev.json
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/bin/Debug/net5.0/imthecatbot.dll
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/bin/Debug/net5.0/ref/imthecatbot.dll
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/bin/Debug/net5.0/imthecatbot.pdb
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.csproj.AssemblyReference.cache
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.AssemblyInfoInputs.cache
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.AssemblyInfo.cs
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.csproj.CoreCompileInputs.cache
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.dll
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/ref/imthecatbot.dll
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.pdb
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.genruntimeconfig.cache
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/bin/Debug/net5.0/AsyncAwaitBestPractices.dll
+/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/obj/Debug/net5.0/imthecatbot.csproj.CopyComplete

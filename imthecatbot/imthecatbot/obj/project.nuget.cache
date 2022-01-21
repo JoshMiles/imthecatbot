@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XW5YloML2YYQVKVxgduVlEKd2era5OE8zdIJ70IweUy9adEQBVFopBKkGck2sdonCdDnZ6Be9oAC+sM5mA1m0Q==",
+  "dgSpecHash": "LnaR6pT4fFEcuRMHMw5SBCy1+4085QZm1ZFxBT/EFwS3LV5bK8ZMZgHkDRxfSdMCm6lkTOv34b24u89LzxxTEQ==",
   "success": true,
   "projectFilePath": "/Users/joshua/Documents/GitHub/imthecatbot/imthecatbot/imthecatbot/imthecatbot.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/joshua/.nuget/packages/asyncawaitbestpractices/6.0.4/asyncawaitbestpractices.6.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

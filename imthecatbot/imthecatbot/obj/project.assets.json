@@ -1,11 +1,42 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "AsyncAwaitBestPractices/6.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/AsyncAwaitBestPractices.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AsyncAwaitBestPractices.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AsyncAwaitBestPractices/6.0.4": {
+      "sha512": "dO/ZfaT+5DMMnYUCmxAk2s1jEXUTDcgethroMj1kcmedO0MAu6WgvPP4gPYem/0kJASrnBcem+kr5ju3LaNdMw==",
+      "type": "package",
+      "path": "asyncawaitbestpractices/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "asyncawaitbestpractices.6.0.4.nupkg.sha512",
+        "asyncawaitbestpractices.nuspec",
+        "lib/netstandard1.0/AsyncAwaitBestPractices.dll",
+        "lib/netstandard1.0/AsyncAwaitBestPractices.xml",
+        "lib/netstandard2.0/AsyncAwaitBestPractices.dll",
+        "lib/netstandard2.0/AsyncAwaitBestPractices.xml",
+        "lib/netstandard2.1/AsyncAwaitBestPractices.dll",
+        "lib/netstandard2.1/AsyncAwaitBestPractices.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "AsyncAwaitBestPractices >= 6.0.4"
+    ]
   },
   "packageFolders": {
     "/Users/joshua/.nuget/packages/": {}
@@ -43,6 +74,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "AsyncAwaitBestPractices": {
+            "target": "Package",
+            "version": "[6.0.4, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "imthecatbot/1.0.0": {
+        "dependencies": {
+          "AsyncAwaitBestPractices": "6.0.4"
+        },
+        "runtime": {
+          "imthecatbot.dll": {}
+        }
+      },
+      "AsyncAwaitBestPractices/6.0.4": {
+        "runtime": {
+          "lib/netstandard2.1/AsyncAwaitBestPractices.dll": {
+            "assemblyVersion": "6.0.4.0",
+            "fileVersion": "6.0.4.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "imthecatbot/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AsyncAwaitBestPractices/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dO/ZfaT+5DMMnYUCmxAk2s1jEXUTDcgethroMj1kcmedO0MAu6WgvPP4gPYem/0kJASrnBcem+kr5ju3LaNdMw==",
+      "path": "asyncawaitbestpractices/6.0.4",
+      "hashPath": "asyncawaitbestpractices.6.0.4.nupkg.sha512"
+    }
+  }
+}
